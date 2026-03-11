@@ -232,25 +232,25 @@
 
         combo_f3 {
             bindings = <&kp F3>;
-            key-positions = <25 26>;
+            key-positions = <26 25>;
             layers = <2>;
         };
 
         combo_f5 {
             bindings = <&kp F5>;
-            key-positions = <25 27>;
+            key-positions = <27 25>;
             layers = <2>;
         };
 
         combo_f6 {
             bindings = <&kp F6>;
-            key-positions = <26 27>;
+            key-positions = <27 26>;
             layers = <2>;
         };
 
         combo_f7 {
             bindings = <&kp F7>;
-            key-positions = <25 26 27>;
+            key-positions = <27 26 25>;
             layers = <2>;
         };
 
@@ -262,43 +262,43 @@
 
         combo_f10 {
             bindings = <&kp F10>;
-            key-positions = <26 28>;
+            key-positions = <28 26>;
             layers = <2>;
         };
 
         combo_f11 {
             bindings = <&kp F11>;
-            key-positions = <25 26 28>;
+            key-positions = <28 26 25>;
             layers = <2>;
         };
 
         combo_f12 {
             bindings = <&kp F12>;
-            key-positions = <27 28>;
+            key-positions = <28 27>;
             layers = <2>;
         };
 
         combo_qmark {
             bindings = <&kp QMARK>;
-            key-positions = <37 27>;
+            key-positions = <27 37>;
             layers = <0>;
         };
 
         combo_excl {
             bindings = <&kp EXCL>;
-            key-positions = <37 28>;
+            key-positions = <28 37>;
             layers = <0>;
         };
 
         combo_caret {
             bindings = <&kp JP_CARET>;
-            key-positions = <25 16 27>;
+            key-positions = <27 16 25>;
             layers = <0>;
         };
 
         combo_eqal {
             bindings = <&kp EQUAL>;
-            key-positions = <25 26 27 28>;
+            key-positions = <27 28 26 25>;
             layers = <1>;
         };
 
@@ -315,12 +315,12 @@
 
         combo_colon {
             bindings = <&kp JP_COLON>;
-            key-positions = <15 25>;
+            key-positions = <25 15>;
         };
 
         combo_semi {
             bindings = <&kp SEMI>;
-            key-positions = <16 26>;
+            key-positions = <26 16>;
         };
 
         combo_bspc {
@@ -342,7 +342,7 @@
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <37 17>;
+            key-positions = <17 37>;
             layers = <0>;
         };
 
