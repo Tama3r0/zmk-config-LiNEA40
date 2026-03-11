@@ -383,6 +383,7 @@
 &none  &mt LCTRL I  &mt LALT O  &mt LSHFT A  &mt LSHFT E                &mt RSHFT S  &mt RSHFT K  &mt RALT H  &mt RALT T  &kp PG_DN
 &none  &none        &none       &none        &lt 2 SPACE    &none  &none  &lt 1 RET               &none       &kp LC(C)   &kp LC(V)
             >;
+            sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
 
         NUM {
@@ -392,6 +393,7 @@
 &none  &mt LCTRL JP_TILDE  &mt LALT HASH         &mt LSHFT JP_YEN        &mt LSHFT JP_AT                     &mt RSHFT N1          &mt RSHFT N2      &mt RALT N4     &mt LCTRL N8  &trans
 &none  &none               &none                 &none                   &kp TAB              &none  &none  &trans                                   &none           &trans        &trans
             >;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
         };
 
         FUNC {
@@ -401,14 +403,16 @@
 &none  &kp LCTRL  &kp LEFT  &kp DOWN  &kp RIGHT                &kp F1        &kp F2        &kp F4        &kp F8  &trans
 &none  &none      &none     &none     &trans     &none  &none  &kp BSPC                    &none         &trans  &trans
             >;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
         };
         SCROLL {
             bindings = <
 &none &none &none &none &none             &none &none &none &none &none
 &none &none &none &none &none             &none &none &none &none &none
 &none &none &none &none &none             &none &none &none &none &none
-&none &none &none &none &none &none &none &none             &none &none
+&none &none &none &none &none &none &none &none       &none &none &none
             >;
+            sensor-bindings = <&msc SCRL_RIGHT SCRL_LEFT>;
         };
 
     };
