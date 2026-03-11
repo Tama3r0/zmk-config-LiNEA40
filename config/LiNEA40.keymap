@@ -353,23 +353,24 @@
     behaviors {
         right_click: right_click_behavior {
             compatible = "zmk,behavior-mouse-key";
-            label = "RIGHT_CLICK";
             #binding-cells = <0>;
-
-            // 右クリックは通常 MB2 に対応（ZMKの標準定義）
-
             bindings = <&mkp MB2>;
         };
+
         scroll_mb3: scroll_mb3 {
             compatible = "zmk,behavior-macro";
-            label = "SCROLL_MB3";
             #binding-cells = <0>;
-
             bindings =
-                <&macro_press   &mo 3>
-                , <&macro_press &mkp MB3>
-                , <&macro_release &mo 3>
-                , <&macro_release &mkp MB3>;
+                <&macro_press &mo 3>
+              , <&macro_press &mkp MB3>
+              , <&macro_release &mo 3>
+              , <&macro_release &mkp MB3>;
+        };
+
+        mouse_scroll: mouse_scroll {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
         };
     };
 
