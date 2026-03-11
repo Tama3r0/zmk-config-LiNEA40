@@ -1,4 +1,5 @@
 // 定義を呼んでくる
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 10
 
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
@@ -350,6 +351,7 @@
         };
     };
 
+
     behaviors {
         right_click: right_click_behavior {
             compatible = "zmk,behavior-mouse-key";
@@ -367,12 +369,13 @@
               , <&macro_release &mkp MB3>;
         };
 
-        mouse_scroll: mouse_scroll {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            bindings = <&msc>, <&msc>;
+        encoder_scroll_h: encoder_scroll_h {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
         };
     };
+
 
     keymap {
         compatible = "zmk,keymap";
@@ -413,7 +416,7 @@
 &none &none &none &none &none             &none &none &none &none &none
 &none &none &none &none &none &none &none &none       &none &none &none
             >;
-            sensor-bindings = <&msc SCRL_RIGHT SCRL_LEFT>;
+            sensor-bindings = <&encoder_scroll_h>;
         };
 
     };
