@@ -452,7 +452,7 @@
 &none  &none        &none       &none        &none                        &mkp MB4     &mkp MB5     &mo 3       &mkp MB1    &mkp MB2
 &none  &kp ESC      &mt LALT W  &mt LGUI U   &mt LGUI E                   &mt RGUI Y   &mt RGUI O   &mt RALT R  &kp BSPC    &kp PG_UP
 &none  &mt LCTRL T  &mt LALT S  &mt LSHFT H  &mt LSHFT A                  &mt RSHFT I  &mt RSHFT K  &mt RALT N  &mt RALT M  &kp PG_DN
-&none  &none        &none       &none        &lt 2 SPACE  &none    &none  &lt 1 RET                 &none       &kp LC(C)   &kp LC(V)
+&none  &none        &none       &none        &lt 2 SPACE  &mo 1    &mo 2  &lt 1 RET                 &none       &kp LC(C)   &kp LC(V)
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN UP>;
@@ -460,10 +460,10 @@
 
         NUM {
             bindings = <
-&none  &none               &none                 &none                   &none                                 &trans                &trans            &trans          &trans        &trans
-&none  &trans              &mt LALT JP_LBRACKET  &mt LGUI JP_UNDERSCORE  &mt LGUI JP_RBRACKET                  &mt RGUI JP_ASTERISK  &mt RGUI JP_PLUS  &mt RALT MINUS  &trans        &trans
-&none  &mt LCTRL JP_TILDE  &mt LALT HASH         &mt LSHFT JP_YEN        &mt LSHFT JP_AT                       &mt RSHFT N1          &mt RSHFT N2      &mt RALT N4     &mt LCTRL N8  &trans
-&none  &none               &none                 &none                   &kp TAB               &none    &none  &trans                                  &none           &trans        &trans
+&none  &none               &none                 &none                   &none                                   &trans                &trans            &trans          &trans        &trans
+&none  &trans              &mt LALT JP_LBRACKET  &mt LGUI JP_UNDERSCORE  &mt LGUI JP_RBRACKET                    &mt RGUI JP_ASTERISK  &mt RGUI JP_PLUS  &mt RALT MINUS  &trans        &trans
+&none  &mt LCTRL JP_TILDE  &mt LALT HASH         &mt LSHFT JP_YEN        &mt LSHFT JP_AT                         &mt RSHFT N1          &mt RSHFT N2      &mt RALT N4     &mt LCTRL N8  &trans
+&none  &none               &none                 &none                   &kp TAB               &trans    &trans  &trans                                  &none           &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
@@ -471,10 +471,10 @@
 
         FUNC {
             bindings = <
-&none  &none      &none     &none     &none                      &trans        &trans        &trans        &trans  &trans
-&none  &trans     &kp LALT  &kp UP    &kp LSHFT                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans
-&none  &kp LCTRL  &kp LEFT  &kp DOWN  &kp RIGHT                  &kp F1        &kp F2        &kp F4        &kp F8  &trans
-&none  &none      &none     &none     &trans     &none    &none  &kp BSPC                    &none         &trans  &trans
+&none  &none      &none     &none     &none                        &trans        &trans        &trans        &trans  &trans
+&none  &trans     &kp LALT  &kp UP    &kp LSHFT                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans
+&none  &kp LCTRL  &kp LEFT  &kp DOWN  &kp RIGHT                    &kp F1        &kp F2        &kp F4        &kp F8  &trans
+&none  &none      &none     &none     &trans     &trans    &trans  &kp BSPC                    &none         &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
