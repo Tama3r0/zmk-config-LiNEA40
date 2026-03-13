@@ -1,6 +1,6 @@
 // 定義を呼んでくる
 
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 5
 
 #include <dt-bindings/zmk/mouse.h>
 #include <input/processors.dtsi>
