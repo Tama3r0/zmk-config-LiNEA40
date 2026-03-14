@@ -97,6 +97,7 @@
             key-positions = <12 13>;
             layers = <0>;
         };
+
         combo_c2 {
             timeout-ms = <100>;
             require-prior-idle-ms = <150>;
@@ -112,6 +113,7 @@
             key-positions = <21 23>;
             layers = <0>;
         };
+
         combo_d2 {
             timeout-ms = <100>;
             require-prior-idle-ms = <150>;
@@ -119,6 +121,7 @@
             key-positions = <27 28>;
             layers = <0>;
         };
+
         combo_f {
             timeout-ms = <100>;
             require-prior-idle-ms = <150>;
@@ -126,6 +129,7 @@
             key-positions = <28 27>;
             layers = <0>;
         };
+
         combo_g {
             timeout-ms = <100>;
             require-prior-idle-ms = <150>;
@@ -149,6 +153,7 @@
             key-positions = <15 17>;
             layers = <0 4>;
         };
+
         combo_m2 {
             timeout-ms = <100>;
             require-prior-idle-ms = <150>;
@@ -164,6 +169,7 @@
             key-positions = <23 12>;
             layers = <0>;
         };
+
         combo_p2 {
             timeout-ms = <100>;
             require-prior-idle-ms = <150>;
@@ -187,20 +193,22 @@
             key-positions = <13 14>;
             layers = <0>;
         };
-    combo_v2 {
-        timeout-ms = <100>;
-        require-prior-idle-ms = <150>;
-        bindings = <&kp V>;
-        key-positions = <23 24>;
-        layers = <4>;
-    };
-    combo_w {
-        timeout-ms = <100>;
-        require-prior-idle-ms = <150>;
-        bindings = <&kp W>;
-        key-positions = <25 27>;
-        layers = <4>;
-    };
+
+        combo_v2 {
+            timeout-ms = <100>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp V>;
+            key-positions = <23 24>;
+            layers = <4>;
+        };
+
+        combo_w {
+            timeout-ms = <100>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp W>;
+            key-positions = <25 27>;
+            layers = <4>;
+        };
 
         combo_x {
             timeout-ms = <100>;
@@ -209,14 +217,14 @@
             key-positions = <23 14>;
             layers = <0>;
         };
-    combo_x2 {
-        timeout-ms = <100>;
-        require-prior-idle-ms = <150>;
-        bindings = <&kp X>;
-        key-positions = <14 13>;
-        layers = <4>;
-    };
 
+        combo_x2 {
+            timeout-ms = <100>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp X>;
+            key-positions = <14 13>;
+            layers = <4>;
+        };
 
         combo_z {
             timeout-ms = <100>;
@@ -225,13 +233,14 @@
             key-positions = <22 23>;
             layers = <0>;
         };
-    combo_z2 {
-        timeout-ms = <100>;
-        require-prior-idle-ms = <150>;
-        bindings = <&kp Z>;
-        key-positions = <25 26>;
-        layers = <4>;
-    };
+
+        combo_z2 {
+            timeout-ms = <100>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp Z>;
+            key-positions = <25 26>;
+            layers = <4>;
+        };
 
         combo_comma {
             timeout-ms = <100>;
@@ -483,6 +492,17 @@
             bindings = <&mkp MB3>;
             key-positions = <8 9>;
         };
+
+        combo_TG4 {
+            bindings = <&tog 4>;
+            key-positions = <35 36>;
+            layers = <0>;
+        };
+
+        combo_TG0 {
+            bindings = <&tog 4>;
+            key-positions = <35 36>;
+        };
     };
 
     behaviors {
@@ -553,6 +573,7 @@
 &none  &mt LCTRL I  &mt LALT O  &mt LSHFT A  &mt LSHFT E                  &mt RSHFT S  &mt RSHFT K  &mt RALT H  &mt RALT T  &kp PG_DN
 &none  &none        &none       &none        &lt 2 SPACE  &none    &none  &lt 1 RET                 &none       &kp LC(C)   &kp LC(V)
             >;
+
             sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
     };
