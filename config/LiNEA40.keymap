@@ -121,7 +121,13 @@
             key-positions = <28 17>;
             layers = <0>;
         };
-
+        combo_m{
+            timeout-ms = <100>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp M>;
+            key-positions = <28 17>;
+            layers = <0>;
+        };
         combo_p {
             timeout-ms = <100>;
             require-prior-idle-ms = <150>;
