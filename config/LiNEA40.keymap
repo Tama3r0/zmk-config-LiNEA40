@@ -580,9 +580,9 @@
         OHNISHI {
             bindings = <
 &none  &none        &none       &none        &none                        &mkp MB4     &mkp MB5     &mo 3       &mkp MB1    &mkp MB2
-&none  &kp ESC      &mt LALT F  &mt LGUI U   &mt LGUI Y                   &mt RGUI B   &mt RGUI N   &mt RALT R  &kp BSPC    &kp PG_UP
-&none  &mt LCTRL I  &mt LALT O  &mt LSHFT A  &mt LSHFT E                  &mt RSHFT S  &mt RSHFT K  &mt RALT H  &mt RALT T  &kp PG_DN
-&none  &none        &none       &none        &lt 2 SPACE  &none    &none  &lt 1 RET                 &none       &kp LC(C)   &kp LC(V)
+&none  &kp ESC      &mt LALT L  &mt LGUI U   &mt LGUI F                   &mt RGUI K   &mt RGUI R   &mt RALT Y  &kp BSPC    &none
+&none  &mt LCTRL E  &mt LALT I  &mt LSHFT A  &mt LSHFT O                  &mt RSHFT T  &mt RSHFT N  &mt RALT S  &mt RALT H  &none
+&none  &none        &none       &none        &lt 2 SPACE  &mo 1    &mo 2  &lt 1 RET                 &none       &kp LC(C)   &kp LC(V)
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN UP>;
